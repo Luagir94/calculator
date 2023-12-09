@@ -17,15 +17,14 @@ const CalculatorBody = () => {
   } = useCalculator();
   return (
     <div className="w-[300px] h-[500px] bg-opacity-10  bg-gray-100 rounded-xl backdrop-filter backdrop-blur-lg p-5  mx-auto text-center text-gray-900">
-      <div className="h-1/4 bg-gray-100 bg-opacity-10 px-4  rounded-xl text-left overflow-hidden ">
+      <div className="h-1/4 bg-gray-100 bg-opacity-10 px-4  rounded-xl text-left overflow-hidden overflow-y-auto flex flex-col justify-center ">
         <div>
-          <div className="text-gray-200 text-4xl mb-1 ">{formula}</div>
+          <div className="text-gray-200 text-3xl mb-1 ">{formula}</div>
           {formula === prevNumber ? (
             <div> </div>
           ) : (
-            <div className="text-gray-500 text-2xl mb-1 ">{prevNumber}</div>
+            <div className="text-gray-500 text-xl mb-1 ">{prevNumber}</div>
           )}
-          <div className="text-gray-500 text-lg mb-1">{prevNumber}</div>
         </div>
       </div>
       <div className=" h-3/4 grid grid-flow-row auto-rows-auto  items-center grid-cols-4  ">
