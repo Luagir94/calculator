@@ -54,7 +54,7 @@ const CalculatorBody = () => {
         <CalculatorKey value={"+"} type={"blue"} onClick={addOperation} />
 
         <CalculatorKey value={"-/+"} type={"gray"} onClick={toggleSign} />
-        <CalculatorKey value={"0"} onClick={() => console.log("!")} />
+        <CalculatorKey value={"0"} onClick={() => buildNumber("0")} />
         <CalculatorKey
           value={"="}
           doubleSize
