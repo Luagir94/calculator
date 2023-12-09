@@ -19,7 +19,7 @@ const CalculatorKey: React.FC<CalculatorKeyProps> = ({
     <button
       onClick={onClick}
       className={clsx(
-        " h-12 rounded-xl  bg-black backdrop-filter backdrop-blur-lg p-1  mx-auto text-center ",
+        " h-12 rounded-xl  bg-black backdrop-filter backdrop-blur-lg p-1  mx-auto text-center active:scale-95 active:shadow ",
         {
           "bg-black bg-opacity-50": type === "black",
           "bg-blue-800 bg-opacity-80": type === "blue",

@@ -17,7 +17,7 @@ const CalculatorBody = () => {
   } = useCalculator();
   return (
     <div className="w-[300px] h-[500px] bg-opacity-10  bg-gray-100 rounded-xl backdrop-filter backdrop-blur-lg p-5  mx-auto text-center text-gray-900">
-      <div className="h-1/4 bg-gray-100 bg-opacity-10 px-4  rounded-xl text-left ">
+      <div className="h-1/4 bg-gray-100 bg-opacity-10 px-4  rounded-xl text-left overflow-hidden ">
         <div>
           <div className="text-gray-200 text-4xl mb-1 ">{formula}</div>
           {formula === prevNumber ? (
